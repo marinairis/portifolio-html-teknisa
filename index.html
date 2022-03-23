@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Marina íris">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Padrões Web</title>
+    </head>
+
+    <body onload="preRender()">
+        <header>
+            <h1>Desenvolvedores</h1>
+
+            <section>
+                <div id="name">
+                    <label>Por nome:</label>
+                    <input id="nameSearch" type="text" placeholder="Digite aqui..."/>
+                </div>
+
+                <div id="language">
+                    <label>Por linguagem:</label>
+                    <div id="" condition>
+                        <label>
+                            <input id="1" type="radio" name="option" checked/>
+                            <span>E</span>
+                        </label>
+
+                        <label>
+                            <input id="2" type="radio" name="option"/>
+                            <span>OU</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="languageOptions">
+                    <label>
+                        <input id="java" name="java" type="checkbox" checked/>
+                        <span>Java</span>
+                    </label>
+
+                    <labe>
+                        <input id="js" name="js" type="checkbox" checked/>
+                        <span>JavaScript</span>
+                    </labe>
+
+                    <label>
+                        <input id="php" name="php" type="checkbox" checked/>
+                        <span>PhP</span>
+                    </label>
+
+                    <label>
+                        <input id="phyton" name="phyton" type="checkbox" checked/>
+                        <span>Phyton</span>
+                    </label>
+                </div>
+            </section>
+        </header>
+
+        <section class="result">
+            <div class="countResults">
+                <span id="countResult"></span>
+                <span>Resultados</span>
+            </div>
+
+            <div class="container">
+                <div class="card" id="36392ffd-052e-41cf-a3f5-e574bef212b2">
+                    <div class="profilePicture">
+                        <img class="image" src="./images/36392ffd-052e-41cf-a3f5-e574bef212b2.jpg" alt="desenvolvedor">
+                    </div>
+
+                    <div class="profileDescription">
+                        <div class="info">
+                            <h3 class="card-title" name="username">
+                                Dulcilene Farias
+                            </h3>
+
+                            <small name="age">53</small>
+                            <small name="mail">ducilene.farias@example.com</small>
+                            <span name="phone" class="invisible">(99) 1116-1851</span>
+                            <span name="github" class="invisible">https://github.com/greenwolf425</span>
+                            <span name="description" class="invisible">Graduado em Redes de Computadores pel COTEMIG</span>
+                            <span name="descriptionAbility" class="invisible">
+                                Experiências: - Mobile - Análise de Sistemas - DevOps
+                                - Programação Web - Adm. de Banco de Dados (DBA) - Gerência de Projeto
+                            </span>
+                        </div>
+
+                        <div class="languages">
+                            <img name="php" experience="7" class="iconLanguage" src="images/php.png" alt="linguagem"/>
+                            <img name="phyton" experience="8" class="iconLanguage" src="images/python.png" alt="linguagem"/>
+                            <img name="java" experience="10" class="iconLanguage" src="images/java.png" alt="linguagem"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="./js/app.js"></script>
+    </body>
+</html>
