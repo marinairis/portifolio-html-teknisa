@@ -2,6 +2,24 @@ header > section {
     display: flex;
 }
 
+h3 {
+    font-family: Roboto;
+    font-weight: 700, bold;
+    font-style: normal;
+    size: 18px;
+    line-height: 21.6px;
+    color: #333333;
+}
+
+small {
+    font-family: Roboto;
+    font-weight: 400, Regular;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14.6px;
+    color: #7B7B7B;
+}
+
 label {
     font-weight: 600;
     font-size: 14px;
@@ -45,14 +63,14 @@ section > div:not(:first-child) {
     padding: 0 20px;
 }
 
-.resul {
+.result {
     background-color: #ededed;
 }
 
 .countResults {
     padding: 20px 30px 10px;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.3em;
 }
 
 .container {
@@ -74,6 +92,8 @@ section > div:not(:first-child) {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     flex: none;
+    order: 0;
+    flex-grow: 1;
     margin: 12px;
     background-color: white;
 }
@@ -105,4 +125,106 @@ h3 {
     color: #333333;
     flex: none;
     margin: 0px;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: white;
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    box-shadow: 0 4px 4px white;
+    position: relative;
+    display: flex;
+    line-height: 180%;
+}
+
+.modal-container.mostrar {
+    display: flex;
+}
+
+/* slide 73 */
+.fechar {
+    position: absolute;
+    font-size: 1.2em;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: none;
+    color: #777777;
+    cursor: pointer;
+}
+
+/* slide 74 */
+@keyframes modal {
+    from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+    }
+    to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    }
+}
+.mostrar .modal {
+    animation: modal 0.3s;
+}
+
+/* slide 75 */
+.modal > span {
+    display: inline-flex;
+    font-size: 16px;
+}
+.modal > a {
+    display: inline-flex;
+    font-size: 16px;
+}
+.profileDescriptionModal {
+    margin: 0px 10px;
+}
+
+/* slide 76 */
+*[name="age"]::after {
+    content: "Anos";
+}
+
+/* slide 77 */
+.modal .languages {
+    display: flex;
+    flex-direction: column;
+}
+.modal .languageDescription {
+    display: flex;
+    flex-direction: row;
+}
+.modal .modal-experience {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+/* slide 78 */
+.modal .language-name {
+    min-width: 120px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.modal .language-name > span {
+    padding: 0 20px;
 }
